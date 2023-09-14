@@ -6,7 +6,7 @@ function App() {
   const [newTodo, setNewTodo] = useState("");
 
   useEffect(() => {
-    console.log("Fetching todos...");
+    // console.log("Fetching todos...");
     fetch("/api/todos")
       .then((response) => response.json())
       .then((data) => {
